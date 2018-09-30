@@ -21,13 +21,12 @@ $(document).ready(function () {
 }); // End of ready doc
 
 function getAnimals(xml) {
-	console.log('FUCK!');
 	console.log(xml);
-	$('#student').html($(xml).find("student").attr("studentNumber").val());
-	$('#studentName').html($(xml).find("studentName").text());
-	$('#studentNumber').html($(xml).find("studentNumber").text());
-	$('#studentProg').html($(xml).find("studentProg").text());
-	$('#studentCampus').html($(xml).find("studentCampus").text());
+	$('#student').html($(xml).find("student").attr("studentNumber"));
+	$('#studentName').html($(xml).find("studentName"));
+	$('#studentNumber').html($(xml).find("studentNumber"));
+	$('#studentProg').html($(xml).find("studentProg"));
+	$('#studentCampus').html($(xml).find("studentCampus"));
 
 	$('#background').hide();
 
@@ -36,8 +35,8 @@ function getAnimals(xml) {
 	$(xml).find("animal").each(function (n) {
 		$('#main').append(
 			"<section class='list' id='p" + n + "'>" +
-			$(this).attr("animalName") +
-			"</section><br>"
+			$(this).attr("animalName") + "\t\t" + 
+			$(this).attr('scientificName') + "</section><br>"
 		);
 
 		$('#main').append("<ul id='d" + n + "'></ul>");
@@ -54,9 +53,9 @@ function checkDisplay(n, xml) {
 		$(xml).find("animal:nth(" + n + ")").each(function () {
 			$("#d" + n).append(
 				"<p><strong>Picture: </strong>" +
-				$(this).find("animalPic").text() + "</p>");
+				$(this).find('animalPic') + "</p>");
 
-			$("#d" + n).append("Major Cities: <br>");
+			$("#d" + n).append("Animal Facts: <br>");
 			$(this).find("animalFact").each(function () {
 				$("#d" + n).append("<li>" + $(this).text() + "</li>");
 			});
