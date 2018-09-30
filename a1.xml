@@ -1,44 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agaybi>
-<student studentNumber="991491884">
-    <studentName>David Agaybi</studentName>
-    <studentProg>Computer Programmer</studentProg>
-    <studentCampus>Davis Campus</studentCampus>
-    <image>
-			<img width="100" height="150" alt="David" src="/images/David.jpg" />
-    </image>
-    <animal animalName="Hippopotamus" scientificName="Hippopotamus amphibius">
-			<animalPic><img width="100" height="150" alt="David" src="/images/hippo.jpg" /></animalPic>
+	<student studentNumber="991491884">
+		<!-- Student Information Section-->
+		<studentName>David Agaybi</studentName>
+		<studentProg>Computer Programmer</studentProg>
+		<studentCampus>Davis Campus</studentCampus>
+		<studentImage>
+			<image href="/images/David.jpg"/>
+		</studentImage>
+		<!-- Animals Section-->
+		<animal animalName="Hippopotamus" scientificName="Hippopotamus amphibius">
+			<animalPic><image href="/images/rsz_hippo.jpg" /></animalPic>
 			<animalFact>Kills more humans than any other animal in Africa</animalFact>
 			<animalFact>Spends half its life submerged in water</animalFact>
-			<animalFact>Deified by Ancient Egyptians</animalFact>		
+			<animalFact>Deified by ancient Egyptians for its residence in the Nile</animalFact>
 		</animal>
 		<animal animalName="Jaguar" scientificName="Panthera onca">
-			<animalPic><img width="100" height="150" alt="David" src="/images/jag.jpg" /></animalPic>
+			<animalPic><image href="/images/rsz_jag.jpg" /></animalPic>
 			<animalFact>Stronger than its size suggests </animalFact>
 			<animalFact>Can be spotted or black</animalFact>
-			<animalFact>Only large wild cat known to climb trees</animalFact>			
+			<animalFact>Only large cat known to climb trees and stay there!</animalFact>			
 		</animal>
 		<animal animalName="Pigeon" scientificName="Columbidae">
-			<animalPic><img width="100" height="150" alt="David" src="/images/pigeon.jpg" /></animalPic>
+			<animalPic><image href="/images/rsz_pigeon.jpg" /></animalPic>
 			<animalFact>Highly intelligent birds capable of incredible flying abilities</animalFact>
 			<animalFact>Used as messengers known as carrier pigeons to deliver written messages attached to their ankles</animalFact>
 			<animalFact>Eaten in third world countries</animalFact>		
 		</animal>
 		<animal animalName="Chameleon" scientificName="Chamaeleonidae">
-			<animalPic><img width="100" height="150" alt="David" src="/images/cham.jpg" /></animalPic>
+			<animalPic><image href="/images/rsz_cham.jpg" /></animalPic>
 			<animalFact>Powerful camouflage pigments on skin can mimick almost any color environment </animalFact>
-			<animalFact>Eyes move independent of on another so the animal sees two images instead of one</animalFact>
+			<animalFact>Eyes move independent of one another so the animal sees two images instead of one</animalFact>
 			<animalFact>Has very long sticky tongue that blasts out of its mouth to capture insects</animalFact>			
 		</animal>
-
-
-
-
-
-
-</student>
-
+	</student>
 </agaybi>
 
 

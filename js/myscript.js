@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	console.log("in doc ready");
+	console.log("in doc ready");// for testing purposes
 	// Any script not in a separate function, executes on startup 
 
 	$.ajax({
@@ -15,31 +15,28 @@ $(document).ready(function () {
 	$('#background').hide();
 
 	$('#backHead').click(function () {
-		$('#background').toggle();
+		$('#background').fadeToggle(2000);
 	});
 
 }); // End of ready doc
 
+// function to get animals 
 function getAnimals(xml) {
-	console.log(xml);
-	$('#student').html($(xml).find("student").attr("studentNumber"));
-	$('#studentName').html($(xml).find("studentName"));
-	$('#studentNumber').html($(xml).find("studentNumber"));
-	$('#studentProg').html($(xml).find("studentProg"));
-	$('#studentCampus').html($(xml).find("studentCampus"));
-
+	const x = $(xml);
+	const m = $('#main');
+	
 	$('#background').hide();
 
 	// looping through each <animal>
-	$('#main').html("");
-	$(xml).find("animal").each(function (n) {
-		$('#main').append(
-			"<section class='list' id='p" + n + "'>" +
-			$(this).attr("animalName") + "\t\t" + 
+	m.html("");
+	x.find("animal").each(function (n) {
+		m.append(
+			"<section class='list' id='p" + n + "'>" + "Common Name: " +
+			$(this).attr("animalName") + "<br/><br/>" + "Scientific Name: " + 
 			$(this).attr('scientificName') + "</section><br>"
 		);
 
-		$('#main').append("<ul id='d" + n + "'></ul>");
+		m.append("<ul id='d" + n + "'></ul>");
 		$("#d" + n).hide();
 
 		checkDisplay(n, xml);
@@ -47,21 +44,30 @@ function getAnimals(xml) {
 	});
 }
 
+// function to display animals
 function checkDisplay(n, xml) {
-	$("#p" + n).click(function () {
-		$("#d" + n).html("");
-		$(xml).find("animal:nth(" + n + ")").each(function () {
-			$("#d" + n).append(
-				"<p><strong>Picture: </strong>" +
-				$(this).find('animalPic') + "</p>");
+	const x = $(xml);
+	const d = $("#d" + n);
+	const p = $("#p" + n);
+	
 
-			$("#d" + n).append("Animal Facts: <br>");
+	p.click(function () {
+		p.css('opacity', '1');
+		d.html("");
+		x.find("animal:nth(" + n + ")").each(function () {
+			var image = $(this).find("image[href]").attr("href");
+			console.log(image);// for testing purposes
+			d.append(
+				"<p><strong>Picture: </strong>" +
+				"<img src=\"" + image + "\"/>" + "</p>");
+
+			d.append("Animal Facts: <br>");
 			$(this).find("animalFact").each(function () {
-				$("#d" + n).append("<li>" + $(this).text() + "</li>");
+				d.append("<li>" + $(this).text() + "</li>");
 			});
 		});
 
 		$("ul:not([id $= '" + n + "'])").hide("slow");
-		$("#d" + n).toggle("slow");
+		d.toggle("slow");
 	});
 }

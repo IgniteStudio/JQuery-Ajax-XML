@@ -1,22 +1,62 @@
+@media only screen and (max-width: 375px) {
+    body{
+        font-size: 12px;
+    }
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    body{
+        font-size: 12px;
+    }
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    body{
+        font-size: 10px;
+    }
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
 .ibody {
-    background: #f00;
+    background: rgb(236, 131, 162);
+    text-align: center;
+}
+
+.ibody a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .pbody {
-    background: #f00;
+    background: rgb(236, 131, 162);
+    text-align: center;
 }
 
 
 
-span {
+#span1 {
     color: chocolate;
+    font-size: .3em;
     transition: color .5s;
     transition: font-size .5s;
 }
 
-span:hover {
+#span1:hover {
     color: blanchedalmond;
-    font-size: 120%;
+    font-size: .6em;
+}
+
+#span2 {
+    width: 5px;
 }
 
 
@@ -25,7 +65,7 @@ span:hover {
 
 .namestyle {
     font-size: 1.5em;
-    color: rgb(21, 255, 0);
+    color: rgb(26, 175, 12);
     text-align: center;
     font-weight: bold;
 }
@@ -35,13 +75,16 @@ span:hover {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: #333 1px 1px 1px;
     color: rgb(223, 226, 46);
-    background-image: url('/images/pea.jpg');
+    background-image: url('/images/Path.png');
     background-repeat: no-repeat;
-    background-size: cover; 
+    margin-bottom: 20px;
+    background-size: 100% 100%; 
     text-align: center;
     padding: 5px;
     border: #333 2px solid;
     border-radius: 15px;
+    width: auto;
+    height: auto;
 }
 
 .bstyle {
@@ -50,14 +93,27 @@ span:hover {
     text-align: center;
     background: url('/images/py2.jpg');
     color: #333;
-    padding: 5px;
+    padding: 2px;
     border: #333 2px solid;
     border-radius: 10px;
 }
 
 .list {
-    border-radius: 20px 0px 20px 0px;
-    background: rgba(30, 255, 0, 0.75);
-    color: black;
+    border-radius: 0px 20px 0px 20px;
+    background-image: url('/images/python.jpg');
+    background-repeat:  no-repeat;
+    background-size: cover;
+    color: rgb(51, 35, 35);
     padding: 10px;
+    opacity: 0.2;
+    transition: color, opacity  1.2s;
+    
 }
+
+.list:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+
+
