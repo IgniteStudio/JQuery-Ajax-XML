@@ -1,0 +1,63 @@
+.ibody {
+    background: #f00;
+}
+
+.pbody {
+    background: #f00;
+}
+
+
+
+span {
+    color: chocolate;
+    transition: color .5s;
+    transition: font-size .5s;
+}
+
+span:hover {
+    color: blanchedalmond;
+    font-size: 120%;
+}
+
+
+
+
+
+.namestyle {
+    font-size: 1.5em;
+    color: rgb(21, 255, 0);
+    text-align: center;
+    font-weight: bold;
+}
+
+.bhead {
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: #333 1px 1px 1px;
+    color: rgb(223, 226, 46);
+    background-image: url('/images/pea.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    text-align: center;
+    padding: 5px;
+    border: #333 2px solid;
+    border-radius: 15px;
+}
+
+.bstyle {
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background: url('/images/py2.jpg');
+    color: #333;
+    padding: 5px;
+    border: #333 2px solid;
+    border-radius: 10px;
+}
+
+.list {
+    border-radius: 20px 0px 20px 0px;
+    background: rgba(30, 255, 0, 0.75);
+    color: black;
+    padding: 10px;
+}
