@@ -1,19 +1,19 @@
 @media only screen and (max-width: 375px) {
     body{
-        font-size: 12px;
+        font-size: 10px;
     }
     img {
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
     }
 }
 @media only screen and (max-width: 414px) {
     body{
-        font-size: 12px;
+        font-size: 8px;
     }
     img {
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
     }
 }
 @media only screen and (max-width: 320px) {
@@ -21,8 +21,8 @@
         font-size: 10px;
     }
     img {
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
     }
 }
 
@@ -59,7 +59,8 @@ a:hover {
     background: rgb(32, 20, 206);
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: bisque
+    color: bisque;
+    text-shadow: 2px 2px 2px rgb(221, 186, 186);
 }
 
 
@@ -82,11 +83,12 @@ a:hover {
 
 .namestyle {
     font-size: 1em;
+    font-weight: very thick;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(72, 126, 228);
     text-align: center;
     font-weight: bold;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 2px 2px 2px black;
     margin-top: 5px;
 }
 
@@ -120,6 +122,9 @@ a:hover {
 }
 
 .list {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: #fff 1px 1px 1px;
     border-radius: 0px 20px 0px 20px;
     background-image: url('/images/py2.jpg');
     background-repeat:  no-repeat;
@@ -128,13 +133,13 @@ a:hover {
     padding: 10px;
     opacity: 0.2;
     transition: color, opacity  1.2s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
     
 }
 
 .list:hover {
     opacity: 1;
-    color: #fff;
+    color:rgb(75, 27, 0);
 }
 
 

@@ -28,9 +28,7 @@ function getPersonal(xml) {
     var tag = x.find('studentImage');
     var image = tag.find('image[href]').attr('href');
     
-    console.log(tag); // for testing purposes
     
-    console.log(image); // for testing purposes
 
     pic.html("<img src=\"" + image + "\"/>");
     num.html(x.find("student").attr("studentNumber"));
