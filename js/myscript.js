@@ -32,7 +32,7 @@ function getAnimals(xml) {
 	x.find("animal").each(function (n) {
 		m.append(
 			"<section class='list' id='p" + n + "'>" + "Common Name: " +
-			$(this).attr("animalName") + "<br/><br/>" + "Scientific Name: " + 
+			$(this).attr("animalName") + "<br/>" + "Scientific Name: " + 
 			$(this).attr('scientificName') + "</section><br>"
 		);
 
@@ -47,27 +47,38 @@ function getAnimals(xml) {
 // function to display animals
 function checkDisplay(n, xml) {
 	const x = $(xml);
-	const d = $("#d" + n);
-	const p = $("#p" + n);
+	const ul = $("#d" + n);
+	const sec = $("#p" + n);
+	var image, t;
 	
 
-	p.click(function () {
-		p.css('opacity', '1');
-		d.html("");
+	sec.click(function () {
+
+		sec.css('opacity', '1');
+		ul.html("");
+
 		x.find("animal:nth(" + n + ")").each(function () {
-			var image = $(this).find("image[href]").attr("href");
-			console.log(image);// for testing purposes
-			d.append(
+			
+			t = $(this);	
+			ul.append(
 				"<p><strong>Picture: </strong>" +
-				"<img src=\"" + image + "\"/>" + "</p>");
-
-			d.append("Animal Facts: <br>");
-			$(this).find("animalFact").each(function () {
-				d.append("<li>" + $(this).text() + "</li>");
+				"<img class='pic' src=\"" + $(this).find("image[href]").attr("href") + 
+				"\"/></p>"
+			);
+			t.find("animalFact").each(function () {
+				ul.append("<li class='fact'>" + $(this).text() + "</li><br />");
+				$('.fact').hide();
+		
+			
 			});
-		});
 
+			
+		});
+		
 		$("ul:not([id $= '" + n + "'])").hide("slow");
-		d.toggle("slow");
+		ul.toggle("slow");
+		$('.pic').click(function() {
+			$('.fact').toggle('slow');
+		});
 	});
 }

@@ -11,27 +11,27 @@
 		<!-- Animals Section-->
 		<animal animalName="Hippopotamus" scientificName="Hippopotamus amphibius">
 			<animalPic><image href="/images/rsz_hippo.jpg" /></animalPic>
-			<animalFact>Kills more humans than any other animal in Africa</animalFact>
-			<animalFact>Spends half its life submerged in water</animalFact>
-			<animalFact>Deified by ancient Egyptians for its residence in the Nile</animalFact>
+			<animalFact>Kills more humans than any other animal in Africa.</animalFact>
+			<animalFact>Spends half its life submerged in water.</animalFact>
+			<animalFact>Deified by ancient Egyptians for its residence in the Nile.</animalFact>
 		</animal>
 		<animal animalName="Jaguar" scientificName="Panthera onca">
 			<animalPic><image href="/images/rsz_jag.jpg" /></animalPic>
-			<animalFact>Stronger than its size suggests </animalFact>
-			<animalFact>Can be spotted or black</animalFact>
+			<animalFact>Stronger than its size suggests. </animalFact>
+			<animalFact>Can be spotted or black.</animalFact>
 			<animalFact>Only large cat known to climb trees and stay there!</animalFact>			
 		</animal>
 		<animal animalName="Pigeon" scientificName="Columbidae">
 			<animalPic><image href="/images/rsz_pigeon.jpg" /></animalPic>
-			<animalFact>Highly intelligent birds capable of incredible flying abilities</animalFact>
-			<animalFact>Used as messengers known as carrier pigeons to deliver written messages attached to their ankles</animalFact>
-			<animalFact>Eaten in third world countries</animalFact>		
+			<animalFact>Highly intelligent birds capable of incredible flying abilities.</animalFact>
+			<animalFact>Used as messengers known as carrier pigeons to deliver written messages attached to their ankles.</animalFact>
+			<animalFact>Eaten in third world countries.</animalFact>		
 		</animal>
 		<animal animalName="Chameleon" scientificName="Chamaeleonidae">
 			<animalPic><image href="/images/rsz_cham.jpg" /></animalPic>
-			<animalFact>Powerful camouflage pigments on skin can mimick almost any color environment </animalFact>
-			<animalFact>Eyes move independent of one another so the animal sees two images instead of one</animalFact>
-			<animalFact>Has very long sticky tongue that blasts out of its mouth to capture insects</animalFact>			
+			<animalFact>Powerful camouflage pigments on skin can mimick almost any color environment. </animalFact>
+			<animalFact>Eyes move independent of one another so the animal sees two images instead of one.</animalFact>
+			<animalFact>Has very long sticky tongue that blasts out of its mouth to capture insects.</animalFact>			
 		</animal>
 	</student>
 </agaybi>

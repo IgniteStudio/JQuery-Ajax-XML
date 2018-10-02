@@ -3,8 +3,8 @@
         font-size: 12px;
     }
     img {
-        width: 150px;
-        height: 150px;
+        width: 50px;
+        height: 50px;
     }
 }
 @media only screen and (max-width: 414px) {
@@ -12,8 +12,8 @@
         font-size: 12px;
     }
     img {
-        width: 150px;
-        height: 150px;
+        width: 50px;
+        height: 50px;
     }
 }
 @media only screen and (max-width: 320px) {
@@ -21,24 +21,45 @@
         font-size: 10px;
     }
     img {
-        width: 150px;
-        height: 150px;
+        width: 50px;
+        height: 50px;
     }
 }
 
 
+ul {
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(233, 216, 179);
+    text-shadow:  #333 1px 1px 1px;
+}
+
 .ibody {
-    background: rgb(236, 131, 162);
+    background: rgb(12, 94, 216);
     text-align: center;
 }
 
-.ibody a {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+a {
+    font-size: 2em;
+    text-decoration: none;
+    font-family: papyrus;
+    color: rgb(29, 238, 40);
+    text-shadow:  #333 2px 2px 2px;
+    transition: color .5s;
+    transition: font-size .5s;
 }
+
+a:hover {
+    color: yellow;
+    font-size: 2.5em;
+}
+
 
 .pbody {
-    background: rgb(236, 131, 162);
+    background: rgb(32, 20, 206);
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: bisque
 }
 
 
@@ -59,16 +80,16 @@
     width: 5px;
 }
 
-
-
-
-
 .namestyle {
-    font-size: 1.5em;
-    color: rgb(26, 175, 12);
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(72, 126, 228);
     text-align: center;
     font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 5px;
 }
+
 
 .bhead {
     font-size: 2em;
@@ -100,13 +121,14 @@
 
 .list {
     border-radius: 0px 20px 0px 20px;
-    background-image: url('/images/python.jpg');
+    background-image: url('/images/py2.jpg');
     background-repeat:  no-repeat;
     background-size: cover;
     color: rgb(51, 35, 35);
     padding: 10px;
     opacity: 0.2;
     transition: color, opacity  1.2s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 
@@ -114,6 +136,8 @@
     opacity: 1;
     color: #fff;
 }
+
+
 
 
 
